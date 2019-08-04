@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.chat-input-container{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 20px);
+    left: 0;
+    padding: 10px;
+    background-color: #4f5358;
+    box-shadow: 0px 33px 54px 34px rgba(0,0,0,0.05);
+    height: 32px;
+    z-index: 2000;
+}
+
+.chat-input-container input{
+    width: calc(100%);
+    background-color: #3f4246;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat-input-container button{
+    min-width: calc(50px);
+    background-color: #3f4246;
+    border: none;
+    color: white;
+    border-left: 2px rgba(0,0,0,0.1) solid;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #31363b;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.room-control-container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    line-height: 0px;
+    background-color: #4f5358;
+    height: 32px;
+}
+
+.room-control-container input[type=text]{
+    background-color: #3f4246;
+    color: inherit;
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+    border-right: 2px rgba(0,0,0,0.1) solid;
+    font-family: 'Roboto', sans-serif;
+}
+
+.room-control-container button{
+    background-color: #3f4246;
+    color: inherit;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    border-left: 2px rgba(0,0,0,0.1) solid;
+    font-family: 'Roboto', sans-serif;
+}
+
+.room-control-container input[type=number]{
+    background-color: #3f4246;
+    color: inherit;
+    border: none;
+    width: 75px;
+    padding: 5px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.room-control-container p {
+    margin-left: 5px;
+}
+
+#chat-container{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 102px);
+    overflow-y: scroll;
+}
+
+.chat-message-one{
+    color: white;
+    border-bottom: rgba(0,0,0,0.1) 2px solid;
+    padding: 5px;
+}
+
+#connected-users-numbers{
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 100px);
+    width: 100%;
+    color: rgba(0,0,0,0.05);
+    user-select: none;
+    font-size: 200px;
+    z-index: -1000;
+}
+
+#chitterchatter-info{
+    position: absolute;
+    top: 64px;
+    color:white;
+    padding: 20px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ChitterChatter</title>
+</head>
+
+<body>
+    <div class="chat-input-container">
+        <input type="text" id="chat-text" placeholder="Text here...">
+        <button id="chat-send-button">Send</button>
+    </div>
+
+    <div id="chat-container"></div>
+
+    <div id="connected-users-numbers">Connected users: </div>
+
+    <div class="room-control-container">
+        <input id="interests-text-input" type="text" placeholder="Interests">
+        <input id="max-users-input" type="number" placeholder="maxusers">
+        <button id="create-room-button">Search</button>
+        <p id="roomid"></p>
+    </div>
+
+    <div id="chitterchatter-info">
+        <h3 tyle="color:white;">ChitterChatter</h3>
+        <p style="color:white;">Type in your interests and seperate them with a coma (for example: programming, web,
+            data),
+            You will then be connected to the group with most similar interests.
+            <br>
+            <font color="red">Warning! </font> The chat is unmonitored and we can't take any responsibilites for
+            anything that happens. We apoligize for any inconvinience.
+        </p>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

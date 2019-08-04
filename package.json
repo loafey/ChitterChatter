@@ -1,0 +1,30 @@
+{
+  "name": "chitterchatter",
+  "version": "1.0.0",
+  "description": "Get connected with a random group of strangers and chat away. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samhamnam/ChitterChatter.git"
+  },
+  "keywords": [
+    "chat",
+    "npm",
+    "express",
+    "socket.io",
+    "fun"
+  ],
+  "author": "samhamnam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samhamnam/ChitterChatter/issues"
+  },
+  "homepage": "https://github.com/samhamnam/ChitterChatter#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
